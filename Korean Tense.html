@@ -1,0 +1,546 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Korean Tenses: A Comprehensive Guide</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nanum Gothic', Arial, sans-serif;
+            height: 100%;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+        .presentation {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .slide {
+            flex: 1;
+            display: none;
+            padding: 40px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin: 20px;
+            overflow-y: auto;
+        }
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        h1 {
+            color: #3498db;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+        h3 {
+            color: #34495e;
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p, li {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .nav-buttons {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 1000;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        .interactive-exercise {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .quiz-question {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .quiz-option {
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+        }
+        .quiz-option:hover {
+            background-color: #d5dbdb;
+        }
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+            height: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="presentation">
+        <div class="slide active" id="slide1">
+            <h1>Mastering Korean Tenses: A Comprehensive Guide</h1>
+            <p>Discover the key to fluent Korean conversation through mastering tenses</p>
+        </div>
+
+        <div class="slide" id="slide2">
+            <h2>Introduction</h2>
+            <p>Understanding Korean tenses is crucial for effective communication. This guide will help you:</p>
+            <ul>
+                <li>Grasp the nuances of Korean tense system</li>
+                <li>Learn how to conjugate verbs correctly</li>
+                <li>Enhance your conversational skills</li>
+            </ul>
+            <p>We'll cover Present, Past, Future, and Present Continuous tenses in both Formal Polite and Informal Polite forms.</p>
+        </div>
+
+        <div class="slide" id="slide3">
+            <h2>Present Tense</h2>
+            <h3>A. Definition</h3>
+            <p>The Korean present tense expresses actions or states occurring in the present moment or habitual actions.</p>
+            
+            <h3>B. Rules</h3>
+            <p>Formal Polite Form: Verb stem + 습니다/ㅂ니다</p>
+            <p>Informal Polite Form: Verb stem + 아요/어요</p>
+            
+            <h3>C. Usage</h3>
+            <ul>
+                <li>Describing current actions or states</li>
+                <li>Expressing general truths or facts</li>
+                <li>Talking about habits or routines</li>
+            </ul>
+            
+            <h3>D. Examples</h3>
+            <table>
+                <tbody><tr>
+                    <th>Verb Stem</th>
+                    <th>Formal Polite</th>
+                    <th>Informal Polite</th>
+                </tr>
+                <tr>
+                    <td>가다 (to go)</td>
+                    <td>갑니다</td>
+                    <td>가요</td>
+                </tr>
+                <tr>
+                    <td>먹다 (to eat)</td>
+                    <td>먹습니다</td>
+                    <td>먹어요</td>
+                </tr>
+                <tr>
+                    <td>보다 (to see)</td>
+                    <td>봅니다</td>
+                    <td>봐요</td>
+                </tr>
+                <tr>
+                    <td>읽다 (to read)</td>
+                    <td>읽습니다</td>
+                    <td>읽어요</td>
+                </tr>
+                <tr>
+                    <td>듣다 (to listen)</td>
+                    <td>듣습니다</td>
+                    <td>들어요</td>
+                </tr>
+            </tbody></table>
+            
+            <p>Example sentences:</p>
+            <ol>
+                <li>저는 학교에 갑니다. (I go to school.)</li>
+                <li>친구와 점심을 먹어요. (I eat lunch with a friend.)</li>
+                <li>텔레비전을 봅니다. (I watch television.)</li>
+                <li>책을 읽어요. (I read a book.)</li>
+                <li>음악을 듣습니다. (I listen to music.)</li>
+            </ol>
+
+            <h3>E. Interactive Exercises</h3>
+            <div class="interactive-exercise">
+                <div class="quiz-question">1. What is the correct present tense (Informal Polite) for 공부하다 (to study)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부해요')">A) 공부해요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부해요')">B) 공부합니다</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부해요')">C) 공부하다</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+            <div class="interactive-exercise">
+                <div class="quiz-question">2. What is the correct present tense (Formal Polite) for 일하다 (to work)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '일합니다')">A) 일해요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '일합니다')">B) 일합니다</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '일합니다')">C) 일하다</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+            <div class="interactive-exercise">
+                <div class="quiz-question">3. What is the correct present tense (Informal Polite) for 마시다 (to drink)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '마셔요')">A) 마십니다</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '마셔요')">B) 마시다</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '마셔요')">C) 마셔요</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <h3>F. Conclusion</h3>
+            <p>The Korean present tense is used to describe current actions, habitual behaviors, and general truths. Remember to use the appropriate politeness level based on your social context.</p>
+        </div>
+
+        <div class="slide" id="slide4">
+            <h2>Past Tense</h2>
+            <h3>A. Definition</h3>
+            <p>The Korean past tense expresses actions or states that occurred in the past.</p>
+            
+            <h3>B. Rules</h3>
+            <p>Formal Polite Form: Verb stem + 았/었습니다</p>
+            <p>Informal Polite Form: Verb stem + 았/었어요</p>
+            
+            <h3>C. Usage</h3>
+            <ul>
+                <li>Describing past events or actions</li>
+                <li>Talking about completed actions</li>
+                <li>Narrating stories or experiences</li>
+            </ul>
+            
+            <h3>D. Examples</h3>
+            <table>
+                <tbody><tr>
+                    <th>Verb Stem</th>
+                    <th>Formal Polite</th>
+                    <th>Informal Polite</th>
+                </tr>
+                <tr>
+                    <td>가다 (to go)</td>
+                    <td>갔습니다</td>
+                    <td>갔어요</td>
+                </tr>
+                <tr>
+                    <td>먹다 (to eat)</td>
+                    <td>먹었습니다</td>
+                    <td>먹었어요</td>
+                </tr>
+                <tr>
+                    <td>보다 (to see)</td>
+                    <td>봤습니다</td>
+                    <td>봤어요</td>
+                </tr>
+                <tr>
+                    <td>읽다 (to read)</td>
+                    <td>읽었습니다</td>
+                    <td>읽었어요</td>
+                </tr>
+                <tr>
+                    <td>듣다 (to listen)</td>
+                    <td>들었습니다</td>
+                    <td>들었어요</td>
+                </tr>
+            </tbody></table>
+            
+            <p>Example sentences:</p>
+            <ol>
+                <li>어제 학교에 갔습니다. (I went to school yesterday.)</li>
+                <li>친구와 점심을 먹었어요. (I ate lunch with a friend.)</li>
+                <li>영화를 봤습니다. (I watched a movie.)</li>
+                <li>책을 읽었어요. (I read a book.)</li>
+                <li>음악을 들었습니다. (I listened to music.)</li>
+            </ol>
+
+            <h3>E. Interactive Exercises</h3>
+            <div class="interactive-exercise">
+                <div class="quiz-question">1. What is the correct past tense (Informal Polite) for 공부하다 (to study)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부했어요')">A) 공부해요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부했어요')">B) 공부했어요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부했어요')">C) 공부했습니다</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+            <div class="interactive-exercise">
+                <div class="quiz-question">2. What is the correct past tense (Formal Polite) for 일하다 (to work)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '일했습니다')">A) 일했어요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '일했습니다')">B) 일했습니다</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '일했습니다')">C) 일합니다</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+            <div class="interactive-exercise">
+                <div class="quiz-question">3. What is the correct past tense (Informal Polite) for 마시다 (to drink)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '마셨어요')">A) 마셨습니다</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '마셨어요')">B) 마시었어요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '마셨어요')">C) 마셨어요</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <h3>F. Conclusion</h3>
+            <p>The Korean past tense is used to describe actions or states that occurred in the past. Pay attention to the vowel harmony when adding the past tense endings.</p>
+        </div>
+
+        <div class="slide" id="slide5">
+            <h2>Future Tense</h2>
+            <h3>A. Definition</h3>
+            <p>The Korean future tense expresses actions or states that will occur in the future.</p>
+            
+            <h3>B. Rules</h3>
+            <p>Formal Polite Form: Verb stem + (으)ㄹ 것입니다</p>
+            <p>Informal Polite Form: Verb stem + (으)ㄹ 거예요</p>
+            
+            <h3>C. Usage</h3>
+            <ul>
+                <li>Making plans or predictions</li>
+                <li>Expressing intentions or expectations</li>
+                <li>Discussing future events</li>
+            </ul>
+            
+            <h3>D. Examples</h3>
+            <table>
+                <tbody><tr>
+                    <th>Verb Stem</th>
+                    <th>Formal Polite</th>
+                    <th>Informal Polite</th>
+                </tr>
+                <tr>
+                    <td>가다 (to go)</td>
+                    <td>갈 것입니다</td>
+                    <td>갈 거예요</td>
+                </tr>
+                <tr>
+                    <td>먹다 (to eat)</td>
+                    <td>먹을 것입니다</td>
+                    <td>먹을 거예요</td>
+                </tr>
+                <tr>
+                    <td>보다 (to see)</td>
+                    <td>볼 것입니다</td>
+                    <td>볼 거예요</td>
+                </tr>
+                <tr>
+                    <td>읽다 (to read)</td>
+                    <td>읽을 것입니다</td>
+                    <td>읽을 거예요</td>
+                </tr>
+                <tr>
+                    <td>듣다 (to listen)</td>
+                    <td>들을 것입니다</td>
+                    <td>들을 거예요</td>
+                </tr>
+            </tbody></table>
+            
+            <p>Example sentences:</p>
+            <ol>
+                <li>내일 학교에 갈 것입니다. (I will go to school tomorrow.)</li>
+                <li>친구와 점심을 먹을 거예요. (I will eat lunch with a friend.)</li>
+                <li>영화를 볼 것입니다. (I will watch a movie.)</li>
+                <li>책을 읽을 거예요. (I will read a book.)</li>
+                <li>음악을 들을 것입니다. (I will listen to music.)</li>
+            </ol>
+
+            <h3>E. Interactive Exercises</h3>
+            <div class="interactive-exercise">
+                <div class="quiz-question">1. What is the correct future tense (Informal Polite) for 공부하다 (to study)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부할 거예요')">A) 공부해요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부할 거예요')">B) 공부할 거예요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부할 거예요')">C) 공부할 것입니다</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+            <div class="interactive-exercise">
+                <div class="quiz-question">2. What is the correct future tense (Formal Polite) for 일하다 (to work)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '일할 것입니다')">A) 일할 거예요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '일할 것입니다')">B) 일할 것입니다</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '일할 것입니다')">C) 일합니다</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+            <div class="interactive-exercise">
+                <div class="quiz-question">3. What is the correct future tense (Informal Polite) for 마시다 (to drink)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '마실 거예요')">A) 마실 것입니다</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '마실 거예요')">B) 마시겠어요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '마실 거예요')">C) 마실 거예요</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <h3>F. Conclusion</h3>
+            <p>The Korean future tense is used to express future actions or intentions. Remember to use the appropriate ending based on the formality of the situation.</p>
+        </div>
+
+        <div class="slide" id="slide6">
+            <h2>Present Continuous Tense</h2>
+            <h3>A. Definition</h3>
+            <p>The Korean present continuous tense expresses actions that are currently in progress.</p>
+            
+            <h3>B. Rules</h3>
+            <p>Formal Polite Form: Verb stem + 고 있습니다</p>
+            <p>Informal Polite Form: Verb stem + 고 있어요</p>
+            
+            <h3>C. Usage</h3>
+            <ul>
+                <li>Describing actions happening at the moment of speaking</li>
+                <li>Expressing ongoing states or situations</li>
+                <li>Emphasizing the continuity of an action</li>
+            </ul>
+            
+            <h3>D. Examples</h3>
+            <table>
+                <tbody><tr>
+                    <th>Verb Stem</th>
+                    <th>Formal Polite</th>
+                    <th>Informal Polite</th>
+                </tr>
+                <tr>
+                    <td>가다 (to go)</td>
+                    <td>가고 있습니다</td>
+                    <td>가고 있어요</td>
+                </tr>
+                <tr>
+                    <td>먹다 (to eat)</td>
+                    <td>먹고 있습니다</td>
+                    <td>먹고 있어요</td>
+                </tr>
+                <tr>
+                    <td>보다 (to see)</td>
+                    <td>보고 있습니다</td>
+                    <td>보고 있어요</td>
+                </tr>
+                <tr>
+                    <td>읽다 (to read)</td>
+                    <td>읽고 있습니다</td>
+                    <td>읽고 있어요</td>
+                </tr>
+                <tr>
+                    <td>듣다 (to listen)</td>
+                    <td>듣고 있습니다</td>
+                    <td>듣고 있어요</td>
+                </tr>
+            </tbody></table>
+            
+            <p>Example sentences:</p>
+            <ol>
+                <li>지금 학교에 가고 있습니다. (I am going to school now.)</li>
+                <li>친구와 점심을 먹고 있어요. (I am eating lunch with a friend.)</li>
+                <li>영화를 보고 있습니다. (I am watching a movie.)</li>
+                <li>책을 읽고 있어요. (I am reading a book.)</li>
+                <li>음악을 듣고 있습니다. (I am listening to music.)</li>
+            </ol>
+
+            <h3>E. Interactive Exercises</h3>
+            <div class="interactive-exercise">
+                <div class="quiz-question">1. What is the correct present continuous tense (Informal Polite) for 공부하다 (to study)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부하고 있어요')">A) 공부해요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부하고 있어요')">B) 공부하고 있어요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '공부하고 있어요')">C) 공부하고 있습니다</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+            <div class="interactive-exercise">
+                <div class="quiz-question">2. What is the correct present continuous tense (Formal Polite) for 일하다 (to work)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '일하고 있습니다')">A) 일하고 있어요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '일하고 있습니다')">B) 일하고 있습니다</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '일하고 있습니다')">C) 일합니다</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+            <div class="interactive-exercise">
+                <div class="quiz-question">3. What is the correct present continuous tense (Informal Polite) for 마시다 (to drink)?</div>
+                <div class="quiz-options">
+                    <div class="quiz-option" onclick="checkAnswer(this, '마시고 있어요')">A) 마시고 있습니다</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '마시고 있어요')">B) 마셔요</div>
+                    <div class="quiz-option" onclick="checkAnswer(this, '마시고 있어요')">C) 마시고 있어요</div>
+                </div>
+                <div class="feedback"></div>
+            </div>
+
+            <h3>F. Conclusion</h3>
+            <p>The Korean present continuous tense is used to express actions that are currently in progress. It's formed by adding '고 있다' to the verb stem, with appropriate endings for formal or informal speech.</p>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <button onclick="changeSlide(-1)">Previous</button>
+        <button onclick="changeSlide(1)">Next</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function changeSlide(direction) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + direction + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        function checkAnswer(element, correctAnswer) {
+            const feedback = element.parentElement.nextElementSibling;
+            if (element.textContent.includes(correctAnswer)) {
+                feedback.textContent = "Correct! Great job!";
+                feedback.style.color = "green";
+            } else {
+                feedback.textContent = "Incorrect. Try again!";
+                feedback.style.color = "red";
+            }
+        }
+    </script>
+
+
+</body></html>
